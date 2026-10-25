@@ -1,0 +1,99 @@
+{
+  "invoice_acme_digital.pdf": {
+    "doc_type": "invoice",
+    "fields": {
+      "invoice_number": "INV-2026-0147",
+      "invoice_date": "12 Oct 2026",
+      "due_date": "11 Nov 2026",
+      "vendor_name": "Acme Cloud Services Ltd",
+      "customer_name": "Northwind Labs Pvt Ltd",
+      "subtotal": "1,209.00",
+      "tax_amount": "241.80",
+      "total_amount": "1,450.80",
+      "currency": "GBP"
+    }
+  },
+  "invoice_bluefin_scanned.png": {
+    "doc_type": "invoice",
+    "fields": {
+      "invoice_number": "BL-88213",
+      "invoice_date": "03/09/2026",
+      "due_date": "03/10/2026",
+      "vendor_name": "Bluefin Office Supplies",
+      "customer_name": "Riverstone Analytics LLP",
+      "subtotal": "94,000.00",
+      "tax_amount": "16,920.00",
+      "total_amount": "1,10,920.00",
+      "currency": "INR"
+    }
+  },
+  "receipt_greenleaf_photo.jpg": {
+    "doc_type": "receipt",
+    "fields": {
+      "merchant_name": "GREEN LEAF CAFE",
+      "date": "21 Oct 2026",
+      "total_amount": "1,008.00",
+      "tax_amount": "48.00",
+      "payment_method": "UPI",
+      "currency": "INR"
+    }
+  },
+  "resume_ananya.docx": {
+    "doc_type": "resume",
+    "fields": {
+      "full_name": "Ananya Iyer",
+      "email": "ananya.iyer@example.com",
+      "phone": "+91 98450 12345",
+      "location": "Hyderabad, India",
+      "current_title": "Senior Data Engineer",
+      "years_experience": "7",
+      "skills": [
+        "Python",
+        "SQL",
+        "Apache Spark",
+        "Kafka",
+        "Airflow",
+        "dbt",
+        "Snowflake",
+        "AWS"
+      ],
+      "education": "B.Tech in Computer Science, IIIT Hyderabad, 2019"
+    }
+  },
+  "utility_bill_sunrise_scanned.pdf": {
+    "doc_type": "utility_bill",
+    "fields": {
+      "provider": "SUNRISE POWER DISTRIBUTION CO.",
+      "account_number": "7700 4512 9031",
+      "customer_name": "Rahul Menon",
+      "billing_period": "01 Sep 2026 - 30 Sep 2026",
+      "amount_due": "3,216.04",
+      "due_date": "15 Oct 2026"
+    }
+  },
+  "contract_quantumforge_digital.pdf": {
+    "doc_type": "contract",
+    "fields": {
+      "title": "SOFTWARE SERVICES AGREEMENT",
+      "parties": [
+        "Northwind Labs Pvt Ltd",
+        "Quantum Forge Technologies LLP"
+      ],
+      "effective_date": "1 November 2026",
+      "end_date": "31 October 2027",
+      "governing_law": "India",
+      "payment_terms": "INR 4,50,000"
+    }
+  },
+  "bank_statement_harbour_scanned.tiff": {
+    "doc_type": "bank_statement",
+    "fields": {
+      "account_holder": "Kavya Reddy",
+      "bank_name": "HARBOUR BANK",
+      "account_number": "50100 2345 6789",
+      "statement_period": "01 Sep 2026 to 30 Sep 2026",
+      "opening_balance": "84,250.00",
+      "closing_balance": "1,54,745.86"
+    }
+  }
+}

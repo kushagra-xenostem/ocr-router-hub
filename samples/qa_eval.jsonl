@@ -1,0 +1,12 @@
+{"question": "What is the total due on the Acme invoice?", "answer_keywords": ["1,450.80"], "file": "invoice_acme_digital.pdf"}
+{"question": "When is the Bluefin invoice payment due?", "answer_keywords": ["03/10/2026"], "file": "invoice_bluefin_scanned.png"}
+{"question": "How was the Green Leaf Cafe bill paid?", "answer_keywords": ["UPI"], "file": "receipt_greenleaf_photo.jpg"}
+{"question": "Which university did Ananya Iyer attend?", "answer_keywords": ["IIIT Hyderabad"], "file": "resume_ananya.docx"}
+{"question": "How many units of electricity were consumed in September?", "answer_keywords": ["412"], "file": "utility_bill_sunrise_scanned.pdf"}
+{"question": "How much notice is needed to terminate the software services agreement?", "answer_keywords": ["60 days"], "file": "contract_quantumforge_digital.pdf"}
+{"question": "What is the monthly fee in the Quantum Forge contract?", "answer_keywords": ["4,50,000"], "file": "contract_quantumforge_digital.pdf"}
+{"question": "What was the closing balance on Kavya's bank statement?", "answer_keywords": ["1,54,745.86"], "file": "bank_statement_harbour_scanned.tiff"}
+{"question": "How much was paid for rent in September according to the bank statement?", "answer_keywords": ["32,000"], "file": "bank_statement_harbour_scanned.tiff"}
+{"question": "What VAT rate is charged on the Acme invoice?", "answer_keywords": ["20%"], "file": "invoice_acme_digital.pdf"}
+{"question": "What is the CEO's salary at Acme Cloud Services?", "answer_keywords": [], "answerable": false}
+{"question": "What is the warranty period for the standing desks?", "answer_keywords": [], "answerable": false}
