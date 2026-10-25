@@ -1,7 +1,6 @@
-import csv
 import io
+import csv
 import json
-
 from conftest import FakeLLM, FakeOCR, sample, wait_job
 
 

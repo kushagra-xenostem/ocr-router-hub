@@ -1,14 +1,12 @@
 """Chunking, local embeddings, and hybrid (BM25 + vector, RRF) retrieval with optional reranking."""
-import math
 import re
+import math
 import threading
+import numpy as np
+from .config import ROOT
+from typing import Protocol
 from collections import Counter
 from dataclasses import dataclass
-from typing import Protocol
-
-import numpy as np
-
-from .config import ROOT
 
 EMBED_MODEL = "BAAI/bge-small-en-v1.5"
 RERANK_MODEL = "Xenova/ms-marco-MiniLM-L-6-v2"

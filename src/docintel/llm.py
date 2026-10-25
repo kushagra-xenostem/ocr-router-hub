@@ -1,15 +1,13 @@
-import base64
 import io
-import json
 import re
+import json
 import time
-from collections.abc import Iterator
-
 import httpx
+import base64
 from PIL import Image
-
 from .config import Settings
 from .metrics import METRICS
+from collections.abc import Iterator
 
 
 class LLMError(RuntimeError):

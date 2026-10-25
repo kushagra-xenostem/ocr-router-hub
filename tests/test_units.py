@@ -1,13 +1,12 @@
 import pytest
-from conftest import GT, SAMPLES
-
 from docintel import ingest
-from docintel.extract import classify, locate, score_fields
-from docintel.llm import LLMError, parse_json
+from conftest import GT, SAMPLES
 from docintel.metrics import Metrics
+from docintel.llm import LLMError, parse_json
+from docintel.search import BM25, chunk_pages
 from docintel.pii import find_pii, mask, redact
 from docintel.schemas import SCHEMAS, parse_date, validate
-from docintel.search import BM25, chunk_pages
+from docintel.extract import classify, locate, score_fields
 
 
 # ---------- ingest ----------

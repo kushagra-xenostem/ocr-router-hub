@@ -1,9 +1,8 @@
 """Turn an uploaded file into pages: an optional embedded text layer plus a rendered image."""
 import io
-from dataclasses import dataclass, field
 from pathlib import PurePath
-
 from PIL import Image, ImageOps
+from dataclasses import dataclass, field
 
 SUPPORTED = {".pdf", ".docx", ".png", ".jpg", ".jpeg", ".tif", ".tiff"}
 IMAGE_EXT = {".png", ".jpg", ".jpeg", ".tif", ".tiff"}

@@ -1,17 +1,16 @@
 """Background document processing: routing, OCR, classification, extraction, indexing.
 
 Each job reports a stage, a 0-100 progress value, an ETA and log lines, which the UI renders live."""
-import hashlib
 import time
-from concurrent.futures import ThreadPoolExecutor
-from dataclasses import dataclass
-
+import hashlib
 from . import ingest
-from .extract import classify, extract_fields
-from .llm import LLMError, image_part
-from .metrics import METRICS
 from .ocr import image_hash
+from .metrics import METRICS
 from .search import chunk_pages
+from dataclasses import dataclass
+from .llm import LLMError, image_part
+from .extract import classify, extract_fields
+from concurrent.futures import ThreadPoolExecutor
 
 MODES = ("auto", "parser", "ocr", "ocr_vlm")
 VLM_MAX_PAGES = 3

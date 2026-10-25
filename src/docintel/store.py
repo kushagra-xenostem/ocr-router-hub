@@ -1,13 +1,11 @@
 import json
-import sqlite3
-import threading
 import time
 import uuid
-from pathlib import Path
-
+import sqlite3
+import threading
 import numpy as np
-
 from .pii import redact
+from pathlib import Path
 
 SCHEMA_VERSION = 1
 SCHEMA = """

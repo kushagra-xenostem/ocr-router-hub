@@ -1,13 +1,12 @@
 """Evaluate extraction accuracy (vs samples/ground_truth.json) and Q&A against a running backend.
 
 Usage: python scripts/run_eval.py [--modes auto ocr_vlm] [--qa] [--backend http://127.0.0.1:8003]"""
-import argparse
-import json
 import re
+import json
 import time
-from pathlib import Path
-
 import httpx
+import argparse
+from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 SAMPLES = ROOT / "samples"

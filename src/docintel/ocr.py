@@ -1,10 +1,9 @@
 """OCR with OnnxTR (docTR models on ONNX Runtime): word-level text, confidence and geometry on CPU."""
-import hashlib
 import io
+import hashlib
 import threading
-from typing import Protocol
-
 from PIL import Image
+from typing import Protocol
 
 
 class OcrEngine(Protocol):

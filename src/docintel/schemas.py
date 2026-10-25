@@ -1,7 +1,7 @@
 """Document types, their extraction schemas and keyword signals for classification."""
 import re
-from dataclasses import dataclass
 from datetime import datetime
+from dataclasses import dataclass
 
 
 @dataclass(frozen=True)

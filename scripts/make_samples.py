@@ -4,9 +4,8 @@ Covers every input route: digital PDF (text layer), scanned PNG/JPG (noise, blur
 image-only PDF, multi-page TIFF and DOCX. Run: python scripts/make_samples.py"""
 import json
 import random
-from pathlib import Path
-
 import numpy as np
+from pathlib import Path
 from PIL import Image, ImageDraw, ImageFilter, ImageFont
 
 OUT = Path(__file__).resolve().parents[1] / "samples"

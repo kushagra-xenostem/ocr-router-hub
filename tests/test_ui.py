@@ -1,15 +1,13 @@
 """Renders the Streamlit UI headlessly against an in-process backend with fake OCR/LLM/models."""
-import socket
-import threading
 import time
-
 import httpx
 import pytest
+import socket
 import uvicorn
-from conftest import ROOT, FakeLLM, FakeOCR, HashEmbedder, OverlapReranker, sample
-
+import threading
 from docintel.api import create_app
 from docintel.config import Settings
+from conftest import ROOT, FakeLLM, FakeOCR, HashEmbedder, OverlapReranker, sample
 
 
 @pytest.fixture(scope="module")

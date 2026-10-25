@@ -1,29 +1,27 @@
-import csv
 import io
-import json
-import logging
 import re
-import threading
+import csv
+import json
 import time
 import uuid
-from collections import defaultdict, deque
-from collections.abc import Callable, Iterator
-from contextlib import asynccontextmanager
+import logging
+import threading
+from . import llm
+from .pii import mask
+from .store import Store
 from pathlib import Path
-
+from .metrics import METRICS
+from .quality import quality_report
+from pydantic import BaseModel, Field
+from .schemas import DOC_TYPES, SCHEMAS
+from .config import Settings, get_settings
+from collections import defaultdict, deque
+from contextlib import asynccontextmanager
+from collections.abc import Callable, Iterator
+from .pipeline import MODES, Deps, JobManager, Options
+from .search import FastEmbedder, FastReranker, Index, SearchConfig
 from fastapi import Depends, FastAPI, File, Form, HTTPException, Request, UploadFile
 from fastapi.responses import FileResponse, PlainTextResponse, Response, StreamingResponse
-from pydantic import BaseModel, Field
-
-from . import llm
-from .config import Settings, get_settings
-from .metrics import METRICS
-from .pii import mask
-from .pipeline import MODES, Deps, JobManager, Options
-from .quality import quality_report
-from .schemas import DOC_TYPES, SCHEMAS
-from .search import FastEmbedder, FastReranker, Index, SearchConfig
-from .store import Store
 
 log = logging.getLogger("docintel")
 _CITE = re.compile(r"\[(\d+)\]")

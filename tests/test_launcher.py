@@ -1,12 +1,10 @@
-import socket
-import subprocess
 import sys
 import time
-from pathlib import Path
-
 import pytest
-
+import socket
 import launcher
+import subprocess
+from pathlib import Path
 
 LAUNCHER_DIR = str(Path(launcher.__file__).parent)
 

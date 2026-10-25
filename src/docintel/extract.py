@@ -1,11 +1,10 @@
 """Classification, LLM/VLM field extraction, grounding against page text, and confidence scoring."""
-import json
 import re
-from collections.abc import Callable
-from difflib import SequenceMatcher
-
-from .llm import LLMError, parse_json
+import json
 from .pii import find_pii
+from difflib import SequenceMatcher
+from collections.abc import Callable
+from .llm import LLMError, parse_json
 from .schemas import DOC_TYPES, SCHEMAS, keyword_scores, validate
 
 MAX_PROMPT_CHARS = 14000
